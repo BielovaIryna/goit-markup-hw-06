@@ -289,53 +289,91 @@
           </p>
         </div>
         <div class="bacement-right">
-          <p class="basement-social-media-title">Social media</p>
-          <ul class="social-media-list sm-list-footer list">
-            <li class="social-media-item">
-              <a
-                href=""
-                class="social-media-link sm-link-footer"
-                aria-label="instagram icon"
+          <div class="social-media-block">
+            <p class="basement-social-media-title">Social media</p>
+            <ul class="social-media-list sm-list-footer list">
+              <li class="social-media-item">
+                <a
+                  href=""
+                  class="social-media-link sm-link-footer"
+                  aria-label="instagram icon"
+                >
+                  <svg class="social-media-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media-item">
+                <a
+                  href=""
+                  class="social-media-link sm-link-footer"
+                  aria-label="twitter icon"
+                >
+                  <svg class="social-media-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media-item">
+                <a
+                  href=""
+                  class="social-media-link sm-link-footer"
+                  aria-label="facebook icon"
+                >
+                  <svg class="social-media-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media-item">
+                <a
+                  href=""
+                  class="social-media-link sm-link-footer"
+                  aria-label="linkedin icon"
+                >
+                  <svg class="social-media-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <form
+            class="basement-subscribe-form"
+            name="subscribe-form"
+            for="bacement-user-name-input"
+          >
+            <label
+              class="bacement-subscribe-form-wrapper"
+              id="bacement-user-name-input"
+            >
+              <span class="basement-subscribe-form-dicr">Subscribe</span>
+            </label>
+            <input
+              type="email"
+              name="user-mail"
+              class="basement-subscribe-input-mail"
+              placeholder="E-mail"
+              required
+            />
+
+            <span class="basement-subscribe-button-wrapper">
+              <button class="basement-subscribe-btn btn" type="submit">
+                Subscribe
+              </button>
+              <svg
+                class="basement-subscribe-button-icon"
+                width="24"
+                height="24"
               >
-                <svg class="social-media-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-media-item">
-              <a
-                href=""
-                class="social-media-link sm-link-footer"
-                aria-label="twitter icon"
-              >
-                <svg class="social-media-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-media-item">
-              <a
-                href=""
-                class="social-media-link sm-link-footer"
-                aria-label="facebook icon"
-              >
-                <svg class="social-media-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-media-item">
-              <a
-                href=""
-                class="social-media-link sm-link-footer"
-                aria-label="linkedin icon"
-              >
-                <svg class="social-media-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+                <use
+                  class="basement-subscribe-button-plane-icon"
+                  href="./images/icons.svg#icon-plain"
+                ></use>
+              </svg>
+            </span>
+          </form>
         </div>
       </div>
     </footer>
