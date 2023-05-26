@@ -12,7 +12,7 @@
 	--white-background-color: #ffffff;
 	--modal-background-color: #fcfcfc;
 	--modal-color: rgba(46, 47, 66, 0.4);
-	--modal-border-color:rgba(46, 47, 66, 0.2);
+	--modal-border-color:1px solid rgba(46, 47, 66, 0.2);
 	--main-font-family: "Roboto", sans-serif;
 	--secondary-font-family: "Raleway", sans-serif;
 	--title-font-size: 56px;
@@ -601,7 +601,7 @@ button {
 	resize: none;
 	padding: 8px 16px;
 	outline: transparent;
-	border: 1px solid var(--modal-border-color);
+	border: var(--modal-border-color);
 	border-radius: 4px;
 	transition: border-color var(--main-transition-duration) var(--main-transition-timing-function);
 background-color: transparent;
@@ -637,11 +637,12 @@ font-weight: var(--small-text-font-weight);
 	justify-content: center;
 	width: 16px;
 	height: 16px;
-	border: 1px solid var(--modal-border-color);
+	border: 1px solid var(--dark-color);
 	border-radius: 2px;
 	cursor: pointer;
 	margin-right: 8px;
 	fill: transparent;
+	color: var(--subtle-text-color);
 	transition: border-color var(--main-transition-duration) var(--main-transition-timing-function),
 		background-color var(--main-transition-duration) var(--main-transition-timing-function);}
 
@@ -667,11 +668,11 @@ fill: transparent;
 }
 .modal-contacts-checkbox:checked + .modal-contacts-checkbox-wrapper  .modal-contacts-custom-icon {
 	opacity: 1;
-	fill: var(--light-color);
+	fill: var(--white-background-color);
 }
 .modal-contacts-checkbox:checked + .modal-contacts-checkbox-wrapper>.modal-contacts-custom-checkbox-wrapper {
 	background-color: var(--pressed-state-color);
-	border: none;
+	border-color: var(--pressed-state-color);
 }
 .modal-contacts-submit-btn {
 	display: block;
