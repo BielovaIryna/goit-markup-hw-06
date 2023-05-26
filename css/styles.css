@@ -425,11 +425,15 @@ button {
 	font-weight: var(--third-title-font-weight);
 	font-size: var(--body-font-size);
 	line-height: var(--body-line-height);
+	letter-spacing: var(--body-letter-spacing);
 	margin-bottom: 16px;
 }
 .basement-subscribe-form{
 	display: flex;
 	
+}
+.bacement-subscribe-form-wrapper{
+	margin-right: 24px;
 }
 .basement-subscribe-input-mail {
 	width: 264px;
@@ -439,12 +443,12 @@ button {
 	border: 1px solid var(--white-background-color);
 	padding-left: 16px;
 	background-color: transparent;
-	margin-right: 24px;
 	color: inherit;
 	font-weight: var(--small-text-font-weight);
 	font-size: var(--small-text-font-size);
-	line-height: var(--button-line-height);
+	line-height: var(--button-text-line-height);
 	letter-spacing: var(--button-text-letter-spacing);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 .basement-subscribe-input-mail::placeholder {
 	font-weight: var(--body-font-weight);
@@ -467,7 +471,7 @@ button {
 	font-weight: var(--body-medium-font-weight);
 	font-size: var(--body-medium-font-size);
 	line-height: var(--body-medium-line-height);
-	letter-spacing: var(--body-medium-letter-spacing);
+	letter-spacing: var(--button-text-letter-spacing);
 }
 .basement-subscribe-button-icon {
 	fill: var(--white-background-color);
@@ -545,6 +549,7 @@ button {
 	font-weight: var(--body-medium-font-weight);
 	font-size: var(--body-font-size);
 	line-height: var(--body-line-height);
+	letter-spacing: var(--body-medium-letter-spacing);
 	color: var(--dark-color);
 	text-align: center;
 	margin-bottom: 16px;
@@ -552,7 +557,8 @@ button {
 .modal-contacts-form-fild {
 	margin-bottom: 8px;
 }
-.contacts-form-wrapper-discr {
+.modal-contacts-form-wrapper {
+	display: block;
 	font-weight: var(--small-text-font-weight);
 	font-size: var(--small-text-font-size);
 	line-height: var(--small-text-line-height);
@@ -562,12 +568,13 @@ button {
 .modal-contacts-input {
 	color: var(--dark-color);
 	width: 100%;
+	height: 40px;
 	border: 1px solid var(--modal-color);
 	border-radius: 4px;
 	transition: border-color var(--main-transition-duration) var(--main-transition-timing-function);
 	padding-left: 38px;
-	padding-top: 11px;
-	padding-bottom: 11px;
+	outline: transparent;
+	background-color: transparent;
 }
 
 .contacts-form-input-wrapper {
@@ -577,8 +584,9 @@ button {
 .contacts-form-input-icon {
 	fill: var(--dark-color);
 	position: absolute;
-	top: 11px;
+	top: 50%;
 	left: 16px;
+	transform: translateY(-50%);
 	transition: fill var(--main-transition-duration) var(--main-transition-timing-function);
 }
 .modal-contacts-form-textarea-fild{
@@ -589,16 +597,20 @@ button {
 	width: 100%;
 	height: 120px;
 	resize: none;
-	padding: 16px 8px;
+	padding: 8px 16px;
+	outline: transparent;
 	border: 1px solid var(--modal-color);
 	border-radius: 4px;
 	transition: border-color var(--main-transition-duration) var(--main-transition-timing-function);
+background-color: transparent;
+font-weight: var(--small-text-font-weight);
+	font-size: var(--small-text-font-size);
+	line-height: var(--small-text-line-height);
+	letter-spacing: var(--small-text-letter-spacing);
 }
 .contacts-form-textarea::placeholder {
 	color: var(--modal-color);
-	font-weight: var(--small-text-font-weight);
-	font-size: var(--small-text-font-size);
-	line-height: var(--small-text-line-height);
+	
 }
 .modal-contacts-input:focus,
 .modal-contacts-input:hover,
@@ -615,6 +627,7 @@ button {
 	display: flex;
 	align-items: center;
 	margin-bottom: 24px	;
+	position: relative;
 }
 .modal-contacts-custom-checkbox {
 	border: 1px solid var(--modal-color);
@@ -625,9 +638,16 @@ button {
 	transition: border-color var(--main-transition-duration) var(--main-transition-timing-function),
 		background-color var(--main-transition-duration) var(--main-transition-timing-function);
 }
-.modal-contacts-checkbox {
+.modal-contacts-checkbox-wrapper{
+	font-weight: var(--small-text-font-weight);
+	font-size: var(--small-text-font-size);
+	line-height: var(--small-text-line-height);
+	letter-spacing: var(--small-text-letter-spacing);
+}
+.modal-contacts-checkbox.visually-hidden {
 	position: absolute;
 	appearance: none;
+	
 }
 .modal-private-policy-link {
 	text-decoration: underline;
@@ -635,7 +655,7 @@ button {
 }
 .modal-contacts-custom-icon {
 	opacity: 0;
-
+fill: transparent;
 	transition: opacity var(--main-transition-duration) var(--main-transition-timing-function);
 }
 .modal-contacts-checkbox:checked + .modal-contacts-custom-checkbox > .modal-contacts-custom-icon {
@@ -649,7 +669,7 @@ button {
 .modal-contacts-submit-btn {
 	display: block;
 	margin: 0 auto;
-	width: 169px;
+	min-width: 169px;
 	height: 56px;
 	padding: 16px 32px;
 	text-align: center;

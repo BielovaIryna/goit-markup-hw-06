@@ -562,44 +562,43 @@
           <div class="modal-contacts-form-fild">
             <label
               class="modal-contacts-form-wrapper"
-              for="modal-input-name"
-            ></label>
-            <span class="contacts-form-wrapper-discr">Name</span>
-            <span class="contacts-form-input-wrapper">
+              for="user-name"
+            >Name</label>
+             <div class="contacts-form-input-wrapper">
               <input
                 class="modal-contacts-input"
                 type="text"
                 name="user_name"
                 required
-                id="modal-input-name"
+                id="user-name"
               />
               <svg class="contacts-form-input-icon" width="18" height="24">
                 <use href="/images/icons.svg#icon-man"></use>
               </svg>
-            </span>
+            </div>
           </div>
           <div class="modal-contacts-form-fild">
-            <label class="modal-contacts-form-wrapper" for="modal-user-phone"
-              ><span class="contacts-form-wrapper-discr">Phone</span></label
+            <label class="modal-contacts-form-wrapper" for="user-phone"
+              >Phone</label
             >
-            <span class="contacts-form-input-wrapper">
+            <div class="contacts-form-input-wrapper">
               <input
                 class="modal-contacts-input"
                 type="tel"
                 name="user-phone"
-                id="modal-user-phone"
+                id="user-phone"
                 required
               />
               <svg class="contacts-form-input-icon" width="18" height="24">
                 <use href="/images/icons.svg#icon-phone"></use>
               </svg>
-            </span>
+            </div>
           </div>
 
           <div class="modal-contacts-form-fild">
             <label class="modal-contacts-form-wrapper" for="modal-user-mail"
-              ><span class="contacts-form-wrapper-discr">Email</span
-              ><span class="contacts-form-input-wrapper">
+              >Email</label>
+              <div class="contacts-form-input-wrapper">
                 <input
                   class="modal-contacts-input"
                   type="email"
@@ -608,45 +607,46 @@
                 />
                 <svg class="contacts-form-input-icon" width="18" height="24">
                   <use href="/images/icons.svg#icon-mail"></use>
-                </svg> </span
-            ></label>
+                </svg> </div>
+            
           </div>
 
           <div class="modal-contacts-form-textarea-fild">
-            <label class="modal-contacts-form-wrapper" for="modal-user-comment"
-              ><span class="contacts-form-wrapper-discr">Comment</span></label
+            <label class="modal-contacts-form-wrapper" for="user-comment"
+              >Comment</label
             >
             <textarea
               class="contacts-form-textarea"
               name="user-comment"
-              id="modal-user-comment"
+              id="user-comment"
               placeholder="Text input"
             ></textarea>
           </div>
           <div class="modal-contacts-form-checkbox-fild">
             <input
-              class="modal-contacts-checkbox"
+              class="modal-contacts-checkbox visually-hidden"
               type="checkbox"
-              name="privasy_policy"
+              name="user_privacyy"
               required
-              id="modal-contacts-policy-checkbox"
+              id="user-privacy"
+              value="true"
             />
+            
+            <label
+              class="modal-contacts-checkbox-wrapper"
+              for="user-privacy"
+            >
             <svg class="modal-contacts-custom-checkbox" width="16" height="16">
               <use
                 class="modal-contacts-custom-icon"
                 href="./images/icons.svg#icon-checked"
               ></use>
             </svg>
-            <label
-              class="modal-contacts-checkbox-wrapper"
-              for="modal-contacts-policy-checkbox"
-            >
-              <span class="contacts-form-wrapper-discr"
-                >I accept the terms and conditions of the
+              I accept the terms and conditions of the
                 <a href="" class="modal-private-policy-link link"
                   >Privacy Policy</a
-                ></span
-              >
+                >
+              
             </label>
           </div>
           <button type="submit" class="modal-contacts-submit-btn btn">
