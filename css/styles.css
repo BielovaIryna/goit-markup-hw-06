@@ -644,13 +644,15 @@ font-weight: var(--small-text-font-weight);
 	fill: transparent;
 	color: var(--subtle-text-color);
 	transition: border-color var(--main-transition-duration) var(--main-transition-timing-function),
-		background-color var(--main-transition-duration) var(--main-transition-timing-function);}
+	background-color var(--main-transition-duration) var(--main-transition-timing-function);
+	}
 
 .modal-contacts-checkbox-wrapper{
 	font-weight: var(--small-text-font-weight);
 	font-size: var(--small-text-font-size);
 	line-height: var(--small-text-line-height);
 	letter-spacing: var(--small-text-letter-spacing);
+	color: var(--subtle-text-color);
 }
 .modal-contacts-checkbox.visually-hidden {
 	position: absolute;
@@ -661,18 +663,22 @@ font-weight: var(--small-text-font-weight);
 	text-decoration: underline;
 	color: var(--primary-brand-color);
 }
-.modal-contacts-custom-icon {
+.modal-contacts-custom-checkbox {
 	opacity: 0;
-fill: transparent;
+	fill: transparent;
 	transition: opacity var(--main-transition-duration) var(--main-transition-timing-function);
 }
-.modal-contacts-checkbox-wrapper:checked  .modal-contacts-checkbox-wrapper{
+.modal-contacts-checkbox:checked +.modal-contacts-checkbox-wrapper>.modal-contacts-custom-checkbox-wrapper{
+	border:none;
+	background-color: var(--pressed-state-color);
+	border-color:var(--pressed-state-color);
+}
+.modal-contacts-checkbox:checked +.modal-contacts-checkbox-wrapper>.modal-contacts-custom-checkbox-wrapper>.modal-contacts-custom-checkbox{
 	opacity: 1;
 	fill: var(--white-background-color);
-	background-color: var(--pressed-state-color);
-	border: none;
-	border-color:var(--pressed-state-color)
+	
 }
+
 
 	
 .modal-contacts-submit-btn {
