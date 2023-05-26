@@ -639,7 +639,7 @@ button {
 	cursor: pointer;
 	margin-right: 8px;
 	color: var(--subtle-text-color);
-	
+	fill: transparent;
 }
 
 .modal-contacts-checkbox-wrapper {
@@ -659,21 +659,21 @@ button {
 }
 .modal-contacts-custom-checkbox-icon {
 	opacity: 0;
-	fill: transparent;
-	transition: opacity var(--main-transition-duration) var(--main-transition-timing-function);
-}
+	
+	}
 .modal-contacts-checkbox:checked +.modal-contacts-checkbox-wrapper 
 	>.modal-contacts-custom-checkbox-wrapper {
 	border: none;
 	background-color: var(--pressed-state-color);
 	border-color: var(--pressed-state-color);
+	fill: var(--white-background-color);
 }
 .modal-contacts-checkbox:checked
 	+ .modal-contacts-checkbox-wrapper
 	> .modal-contacts-custom-checkbox-wrapper
 	> .modal-contacts-custom-checkbox-icon {
 	opacity: 1;
-	fill: var(--white-background-color);
+	
 }
 
 .modal-contacts-submit-btn {
