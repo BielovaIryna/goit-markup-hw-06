@@ -12,7 +12,7 @@
 	--white-background-color: #ffffff;
 	--modal-background-color: #fcfcfc;
 	--modal-color: rgba(46, 47, 66, 0.4);
-	--modal-border-color:1px solid rgba(46, 47, 66, 0.2)	;
+	--modal-border-color: 1px solid rgba(46, 47, 66, 0.2);
 	--main-font-family: "Roboto", sans-serif;
 	--secondary-font-family: "Raleway", sans-serif;
 	--title-font-size: 56px;
@@ -419,21 +419,19 @@ button {
 	margin-right: 80px;
 }
 .bacement-form-wrapper {
-	
 	color: var(--white-background-color);
 }
-.bacement-form-title{
+.bacement-form-title {
 	font-weight: var(--third-title-font-weight);
 	font-size: var(--body-font-size);
 	line-height: var(--body-line-height);
 	letter-spacing: var(--body-letter-spacing);
 	margin-bottom: 16px;
 }
-.basement-subscribe-form{
+.basement-subscribe-form {
 	display: flex;
-	
 }
-.bacement-subscribe-form-wrapper{
+.bacement-subscribe-form-wrapper {
 	margin-right: 24px;
 }
 .basement-subscribe-input-mail {
@@ -591,7 +589,7 @@ button {
 	transform: translateY(-50%);
 	transition: fill var(--main-transition-duration) var(--main-transition-timing-function);
 }
-.modal-contacts-form-textarea-fild{
+.modal-contacts-form-textarea-fild {
 	margin-bottom: 16px;
 }
 .contacts-form-textarea {
@@ -604,15 +602,14 @@ button {
 	border: var(--modal-border-color);
 	border-radius: 4px;
 	transition: border-color var(--main-transition-duration) var(--main-transition-timing-function);
-background-color: transparent;
-font-weight: var(--small-text-font-weight);
+	background-color: transparent;
+	font-weight: var(--small-text-font-weight);
 	font-size: var(--small-text-font-size);
 	line-height: var(--small-text-line-height);
 	letter-spacing: var(--small-text-letter-spacing);
 }
 .contacts-form-textarea::placeholder {
 	color: var(--modal-color);
-	
 }
 .modal-contacts-input:focus,
 .modal-contacts-input:hover,
@@ -628,10 +625,10 @@ font-weight: var(--small-text-font-weight);
 .modal-contacts-form-checkbox-fild {
 	display: flex;
 	align-items: center;
-	margin-bottom: 24px	;
+	margin-bottom: 24px;
 	position: relative;
 }
-.modal-contacts-custom-checkbox-wrapper{
+.modal-contacts-custom-checkbox-wrapper {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
@@ -641,13 +638,11 @@ font-weight: var(--small-text-font-weight);
 	border-radius: 2px;
 	cursor: pointer;
 	margin-right: 8px;
-	fill: transparent;
 	color: var(--subtle-text-color);
-	transition: border-color var(--main-transition-duration) var(--main-transition-timing-function),
-	background-color var(--main-transition-duration) var(--main-transition-timing-function);
-	}
+	
+}
 
-.modal-contacts-checkbox-wrapper{
+.modal-contacts-checkbox-wrapper {
 	font-weight: var(--small-text-font-weight);
 	font-size: var(--small-text-font-size);
 	line-height: var(--small-text-line-height);
@@ -657,7 +652,6 @@ font-weight: var(--small-text-font-weight);
 .modal-contacts-checkbox.visually-hidden {
 	position: absolute;
 	appearance: none;
-	
 }
 .modal-private-policy-link {
 	text-decoration: underline;
@@ -668,19 +662,20 @@ font-weight: var(--small-text-font-weight);
 	fill: transparent;
 	transition: opacity var(--main-transition-duration) var(--main-transition-timing-function);
 }
-.modal-contacts-checkbox:checked +.modal-contacts-checkbox-wrapper>.modal-contacts-custom-checkbox-wrapper{
-	border:none;
+.modal-contacts-checkbox:checked +.modal-contacts-checkbox-wrapper 
+	>.modal-contacts-custom-checkbox-wrapper {
+	border: none;
 	background-color: var(--pressed-state-color);
-	border-color:var(--pressed-state-color);
+	border-color: var(--pressed-state-color);
 }
-.modal-contacts-checkbox:checked +.modal-contacts-checkbox-wrapper>.modal-contacts-custom-checkbox-wrapper>.modal-contacts-custom-checkbox-icon{
+.modal-contacts-checkbox:checked
+	+ .modal-contacts-checkbox-wrapper
+	> .modal-contacts-custom-checkbox-wrapper
+	> .modal-contacts-custom-checkbox-icon {
 	opacity: 1;
 	fill: var(--white-background-color);
-	
 }
 
-
-	
 .modal-contacts-submit-btn {
 	display: block;
 	margin: 0 auto;
@@ -697,7 +692,8 @@ font-weight: var(--small-text-font-weight);
 	letter-spacing: var(--button-text-letter-spacing);
 	transition: background-color var(--main-transition-duration) var(--main-transition-timing-function);
 }
-.modal-contacts-submit-btn:hover, .modal-contacts-submit-btn:focus{
+.modal-contacts-submit-btn:hover,
+.modal-contacts-submit-btn:focus {
 	background-color: var(--pressed-state-color);
 }
 
