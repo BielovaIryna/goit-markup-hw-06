@@ -413,17 +413,15 @@ button {
 .basement-left {
 	margin-right: 120px;
 }
-.bacement-right {
-	display: flex;
-	align-items: baseline;
-	color: var(--white-background-color);
-}
+
 .social-media-block {
 	margin-right: 80px;
 }
-
-.bacement-form-title{
+.bacement-form-wrapper {
 	
+	color: var(--white-background-color);
+}
+.bacement-form-title{
 	font-weight: var(--third-title-font-weight);
 	font-size: var(--body-font-size);
 	line-height: var(--body-line-height);
