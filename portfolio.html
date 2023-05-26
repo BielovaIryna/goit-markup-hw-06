@@ -339,41 +339,38 @@
             </ul>
           </div>
 
-          <form
-            class="basement-subscribe-form"
-            name="subscribe-form"
-            for="bacement-user-name-input"
-          >
-            <label
-              class="bacement-subscribe-form-wrapper"
-              id="bacement-user-name-input"
-            >
-              <span class="basement-subscribe-form-dicr">Subscribe</span>
-            </label>
-            <input
-              type="email"
-              name="user-mail"
-              class="basement-subscribe-input-mail"
-              placeholder="E-mail"
-              required
-            />
-
-            <span class="basement-subscribe-button-wrapper">
-              <button class="basement-subscribe-btn btn" type="submit">
-                Subscribe
-              </button>
-              <svg
-                class="basement-subscribe-button-icon"
-                width="24"
-                height="24"
+          <div class="bacement-form-wrapper">
+            <p class="bacement-form-title">Subscribe</p>
+            <form class="basement-subscribe-form" name="subscribe-form">
+              <label
+                class="bacement-subscribe-form-wrapper"
+                id="bacement-user-name-input"
               >
-                <use
-                  class="basement-subscribe-button-plane-icon"
-                  href="./images/icons.svg#icon-plain"
-                ></use>
-              </svg>
-            </span>
-          </form>
+              
+              <input
+                type="email"
+                name="user-mail"
+                class="basement-subscribe-input-mail"
+                placeholder="E-mail"
+                required
+              />
+            </label>
+                <button class="basement-subscribe-btn btn" type="submit">
+                  Subscribe
+                  <svg
+                  class="basement-subscribe-button-icon"
+                  width="24"
+                  height="24"
+                >
+                  <use
+                    class="basement-subscribe-button-plane-icon"
+                    href="./images/icons.svg#icon-plain"
+                  ></use>
+                </svg>
+                </button>
+                
+             </form>
+          </div>
         </div>
       </div>
     </footer>

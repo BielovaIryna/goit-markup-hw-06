@@ -422,23 +422,31 @@ button {
 	margin-right: 80px;
 }
 
-.basement-subscribe-form-dicr {
-	display: block;
+.bacement-form-title{
+	
 	font-weight: var(--third-title-font-weight);
 	font-size: var(--body-font-size);
 	line-height: var(--body-line-height);
 	margin-bottom: 16px;
 }
+.basement-subscribe-form{
+	display: flex;
+	
+}
 .basement-subscribe-input-mail {
-	max-width: 264px;
+	width: 264px;
 	height: 40px;
 	border-radius: 4px;
 	outline: none;
 	border: 1px solid var(--white-background-color);
-	padding: 8px 16px;
-	background-color: inherit;
+	padding-left: 16px;
+	background-color: transparent;
 	margin-right: 24px;
 	color: inherit;
+	font-weight: var(--small-text-font-weight);
+	font-size: var(--small-text-font-size);
+	line-height: var(--button-line-height);
+	letter-spacing: var(--button-text-letter-spacing);
 }
 .basement-subscribe-input-mail::placeholder {
 	font-weight: var(--body-font-weight);
@@ -446,24 +454,26 @@ button {
 	line-height: 2;
 	color: var(--white-background-color);
 }
-.basement-subscribe-button-wrapper {
-	position: relative;
-	display: inline-block;
-}
+
 .basement-subscribe-btn {
-	max-width: 165px;
+	min-width: 165px;
 	height: 40px;
 	background-color: var(--primary-brand-color);
-	padding: 8px 64px 8px 24px;
 	transition: background-color var(--main-transition-duration) var(--main-transition-timing-function);
 	color: inherit;
 	border-radius: 4px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	font-weight: var(--body-medium-font-weight);
+	font-size: var(--body-medium-font-size);
+	line-height: var(--body-medium-line-height);
+	letter-spacing: var(--body-medium-letter-spacing);
 }
 .basement-subscribe-button-icon {
-	position: absolute;
-	top: 8px;
-	right: 24px;
 	fill: var(--white-background-color);
+	margin-left: 16px;
 }
 .basement-subscribe-btn:hover,
 .basement-subscribe-btn:focus {
