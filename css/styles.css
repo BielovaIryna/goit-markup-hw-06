@@ -12,6 +12,7 @@
 	--white-background-color: #ffffff;
 	--modal-background-color: #fcfcfc;
 	--modal-color: rgba(46, 47, 66, 0.4);
+	--modal-border-color:rgba(46, 47, 66, 0.2);
 	--main-font-family: "Roboto", sans-serif;
 	--secondary-font-family: "Raleway", sans-serif;
 	--title-font-size: 56px;
@@ -562,6 +563,7 @@ button {
 	font-weight: var(--small-text-font-weight);
 	font-size: var(--small-text-font-size);
 	line-height: var(--small-text-line-height);
+	letter-spacing: var(--small-text-letter-spacing);
 	color: var(--subtle-text-color);
 	margin-bottom: 4px;
 }
@@ -593,13 +595,13 @@ button {
 	margin-bottom: 16px;
 }
 .contacts-form-textarea {
-	color: var(--dark-color);
+	color: var(--modal-color);
 	width: 100%;
 	height: 120px;
 	resize: none;
 	padding: 8px 16px;
 	outline: transparent;
-	border: 1px solid var(--modal-color);
+	border: 1px solid var(--modal-border-color);
 	border-radius: 4px;
 	transition: border-color var(--main-transition-duration) var(--main-transition-timing-function);
 background-color: transparent;
@@ -629,15 +631,20 @@ font-weight: var(--small-text-font-weight);
 	margin-bottom: 24px	;
 	position: relative;
 }
-.modal-contacts-custom-checkbox {
-	border: 1px solid var(--modal-color);
+.modal-contacts-custom-checkbox-wrapper{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 16px;
+	height: 16px;
+	border: 1px solid var(--modal-border-color);
 	border-radius: 2px;
-	padding: 4px 3px;
 	cursor: pointer;
 	margin-right: 8px;
+	fill: transparent;
 	transition: border-color var(--main-transition-duration) var(--main-transition-timing-function),
-		background-color var(--main-transition-duration) var(--main-transition-timing-function);
-}
+		background-color var(--main-transition-duration) var(--main-transition-timing-function);}
+
 .modal-contacts-checkbox-wrapper{
 	font-weight: var(--small-text-font-weight);
 	font-size: var(--small-text-font-size);
@@ -658,11 +665,11 @@ font-weight: var(--small-text-font-weight);
 fill: transparent;
 	transition: opacity var(--main-transition-duration) var(--main-transition-timing-function);
 }
-.modal-contacts-checkbox:checked + .modal-contacts-custom-checkbox > .modal-contacts-custom-icon {
+.modal-contacts-checkbox:checked + .modal-contacts-checkbox-wrapper  .modal-contacts-custom-icon {
 	opacity: 1;
 	fill: var(--light-color);
 }
-.modal-contacts-checkbox:checked + .modal-contacts-custom-checkbox {
+.modal-contacts-checkbox:checked + .modal-contacts-checkbox-wrapper>.modal-contacts-custom-checkbox-wrapper {
 	background-color: var(--pressed-state-color);
 	border: none;
 }
